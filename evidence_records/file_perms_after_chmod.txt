@@ -1,0 +1,1 @@
+-r--r--r-- 1 kali kali 56180821 Nov 21  2020 /home/kali/SBTDF204_CS1/original/nitroba.pcap

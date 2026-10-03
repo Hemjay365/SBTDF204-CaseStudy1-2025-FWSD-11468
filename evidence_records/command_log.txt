@@ -1,0 +1,22 @@
+# Commands run on Kali Linux in ~/SBTDF204_CS1 (working copy: working/nitroba_working.pcap)
+wget https://digitalcorpora.s3.amazonaws.com/corpora/scenarios/2008-nitroba/nitroba.pcap
+date -u ; stat nitroba.pcap ; ls -l nitroba.pcap
+sha256sum nitroba.pcap ; md5sum nitroba.pcap ; chmod a-w nitroba.pcap
+cp -p nitroba.pcap ../working/nitroba_working.pcap ; sha256sum nitroba_working.pcap ; capinfos nitroba_working.pcap
+TZ=UTC capinfos -a -e nitroba_working.pcap
+tshark -r nitroba_working.pcap -c 1 -T fields -e frame.number -e frame.time_epoch -e frame.time_utc
+echo "<published sha256>  ../original/nitroba.pcap" | sha256sum -c -      # same for md5sum -c and sha1sum -c
+tshark -r working/nitroba_working.pcap -Y 'http.request.method == "POST" && http.host contains "willselfdestruct"' -T fields -e frame.number -e frame.time_utc -e frame.time_epoch -e eth.src -e eth.dst -e ip.src -e ip.dst -e tcp.srcport -e tcp.stream -e http.request.uri -E header=y -E separator=,
+tshark -r working/nitroba_working.pcap -T fields -e eth.src -e ip.src | sort | uniq -c | sort -rn | head -20
+tshark -r working/nitroba_working.pcap -Y 'eth.src == 00:17:f2:e2:c0:ce && not ip' -T fields -e _ws.col.protocol | sort | uniq -c
+tshark -r working/nitroba_working.pcap -Y 'ip.src == 192.168.15.4' -T fields -e eth.src | sort | uniq -c
+tshark -r working/nitroba_working.pcap -Y 'eth.src == 00:17:f2:e2:c0:ce && http.cookie contains "gmailchat=jcoachj"' -T fields -e frame.number -e frame.time_utc -e ip.dst -e http.host
+tshark -r working/nitroba_working.pcap -Y 'http.host contains "willselfdestruct" && http.cookie' -T fields -e frame.number -e http.cookie | head
+tshark -r working/nitroba_working.pcap -Y 'eth.src == 00:17:f2:e2:c0:ce && (http.host contains "willselfdestruct" || http.cookie contains "gmailchat=jcoachj")' -T fields -e http.host -e http.user_agent | sort | uniq -c | sort -rn
+# Wireshark display filters
+http.request.method == "GET" && http.host == "www.willselfdestruct.com"
+ip.src == 192.168.15.4 && ip.dst == 69.25.94.22 && http.request.method == "POST"
+tcp.stream eq 1707
+eth.src == 00:17:f2:e2:c0:ce && http.request.method == "POST"
+eth.src == 00:17:f2:e2:c0:ce && http.cookie contains "@"
+frame.number == 83326

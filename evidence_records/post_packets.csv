@@ -1,0 +1,2 @@
+frame.number,frame.time_utc,frame.time_epoch,eth.src,eth.dst,ip.src,ip.dst,tcp.srcport,tcp.stream,http.request.uri
+83601,2008-07-22T06:04:24.311700000Z,1216706664.311700000,00:17:f2:e2:c0:ce,00:1d:d9:2e:4f:60,192.168.15.4,69.25.94.22,36044,1707,/secure/submit

@@ -1,0 +1,4 @@
+Source: digitalcorpora.org nitroba-university-harassment-scenario page
+MD5    9981827f11968773ff815e39f5458ec8
+SHA1   65656392412add15f93f8585197a8998aaeb50a1
+SHA256 2b77a9eaefc1d6af163d1ba793c96dbccacb04e6befdf1a0b01f8c67553ec2fb

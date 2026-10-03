@@ -1,0 +1,8 @@
+Redaction and transcription note
+1. Screenshots in ../screenshots are cropped copies. The VM frame and host desktop were removed.
+2. Terminal screenshots: faint text from windows behind the translucent terminal was blanked; the terminal text itself is unaltered.
+3. Fig 17: packet list cropped out (other rows show Gmail session tokens in the Info column).
+4. Fig 21: all cookie values except the gmailchat pair, the hex pane, and tokens in the Info column and request URI are covered with black boxes.
+5. Raw cookie dump not included (unrelated tracking and session tokens).
+6. The text and CSV files in this folder were typed from the screenshots listed inside each file. They are not copies of files on the analysis VM.
+7. The original PCAP is not included, in line with the assessment brief.

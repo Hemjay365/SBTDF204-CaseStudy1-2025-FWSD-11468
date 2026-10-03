@@ -1,0 +1,14 @@
+# Transcribed from the terminal/Wireshark screenshot(s) cited below by the report author.
+# This is a typed copy of what the screenshot shows, not a copy of the original file on the Kali VM.
+# Source figures: Fig 2, Fig 5 (E02)
+File name           : nitroba_working.pcap
+File type           : Wireshark/tcpdump - pcap
+File encapsulation  : Ethernet
+Timestamp precision : microseconds (6)
+Number of packets   : 94410
+Capture duration    : 15759.950751 seconds
+Earliest packet     : 2008-07-22 01:51:07.095278 UTC   (TZ=UTC capinfos; VM local time showed 2008-07-21 21:51:07)
+Latest packet       : 2008-07-22 06:13:47.046029 UTC   (VM local time showed 2008-07-22 02:13:47)
+Strict time order   : True
+Interfaces          : 1 (Ethernet, snaplen 4096)
+Packet 1            : epoch 1216691467.095278000 = 2008-07-22T01:51:07.095278000Z

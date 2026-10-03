@@ -1,0 +1,12 @@
+# Transcribed from the terminal/Wireshark screenshot(s) cited below by the report author.
+# This is a typed copy of what the screenshot shows, not a copy of the original file on the Kali VM.
+# Source figures: Fig 16, 17, 18, 19 (E07, E08)
+MAC 00:17:f2:e2:c0:ce  (Wireshark label Apple_e2:c0:ce)
+  frames with an IP source           : 34554, all with source IP 192.168.15.4
+  frames without an IP source       : 28, all ARP   (not ip filter)
+  HTTP POST requests from this MAC  : 362
+Check: ip.src == 192.168.15.4 -> eth.src
+  34554 00:17:f2:e2:c0:ce            (one MAC only)
+Destination MAC on packets 82936 and 83601: 00:1d:d9:2e:4f:60 (label HonHaiPrecis_2e:4f:60)
+  appears as source MAC with IP 192.168.15.1 (2154 frames) and many external source IPs (inference: local gateway)
+Ethernet stream index for packets 82936 and 83601: 19

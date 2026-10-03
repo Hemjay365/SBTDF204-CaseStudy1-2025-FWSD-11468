@@ -1,0 +1,14 @@
+time_utc,packet,event,source
+2008-07-14 00:21:01,n/a,"First harassing email received (header Sun, 13 Jul 2008 17:21:01 -0700)",Slides PDF p.5 (context)
+2008-07-22 01:51:07.095278,1,Capture begins,capinfos
+2008-07-22 06:01:02.113436,78967,First request with gmailchat=jcoachj@gmail.com cookie,E09
+2008-07-22 06:03:43.825871,82936,GET /secure/submit,E03
+2008-07-22 06:03:44.125949 to 06:03:44.852265,82985..83162,Six image GETs for the form page,E03
+2008-07-22 06:04:05.546193,83326,Gmail channel POST with gmailchat cookie,E09
+2008-07-22 06:04:24.311700,83601,"POST /secure/submit (to lilytuckrige@yahoo.com, ttl=30)",E04
+2008-07-22 06:04:24.469169,83604,302 Moved Temporarily to /secure/success,E05
+2008-07-22 06:04:24.564165,83614,GET /secure/success,E03
+2008-07-22 06:04:24.902157,83654,GET /images/bk-message.gif,E03
+2008-07-22 06:04:55.380722,84201,Last request with gmailchat cookie,E09
+2008-07-22 06:13:47.046029,last,Capture ends,capinfos
+"2008-07-22 06:04 (inferred, mailbox UTC-7 assumed)",n/a,Second email shown in Yahoo inbox as Mon 7/21/08 11:04 PM,Slides PDF p.10 (context)

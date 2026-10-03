@@ -1,0 +1,23 @@
+# Transcribed from the terminal/Wireshark screenshot(s) cited below by the report author.
+# This is a typed copy of what the screenshot shows, not a copy of the original file on the Kali VM.
+# Source figures: Fig 1, Fig 3, Fig 4 (E01)
+File name        : nitroba.pcap
+Source           : https://digitalcorpora.s3.amazonaws.com/corpora/scenarios/2008-nitroba/nitroba.pcap
+Size             : 56180821 bytes (wget: saved [56180821/56180821])
+Downloaded       : Sat Oct 3 04:14:39 PM UTC 2026 (date -u). VM local time at download: 12:14:39 (UTC-4)
+SHA-256          : 2b77a9eaefc1d6af163d1ba793c96dbccacb04e6befdf1a0b01f8c67553ec2fb
+MD5              : 9981827f11968773ff815e39f5458ec8
+SHA-1            : 65656392412add15f93f8585197a8998aaeb50a1
+Original         : chmod a-w applied after hashing; ls -l afterwards: -r--r--r--
+Working copy     : cp -p nitroba.pcap ../working/nitroba_working.pcap
+Working SHA-256  : 2b77a9eaefc1d6af163d1ba793c96dbccacb04e6befdf1a0b01f8c67553ec2fb (identical; "HASHES MATCH")
+
+# Published values (digitalcorpora.org scenario page, Fig 3)
+MD5    9981827f11968773ff815e39f5458ec8
+SHA1   65656392412add15f93f8585197a8998aaeb50a1
+SHA256 2b77a9eaefc1d6af163d1ba793c96dbccacb04e6befdf1a0b01f8c67553ec2fb
+
+# Verification result (Fig 4)
+../original/nitroba.pcap: OK   (sha256sum -c)
+../original/nitroba.pcap: OK   (md5sum -c)
+../original/nitroba.pcap: OK   (sha1sum -c)
